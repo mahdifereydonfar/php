@@ -108,3 +108,22 @@ else :
 endif;
 
 echo $hour;
+
+hr();
+
+$ali= 'phd';
+switch ($ali):
+
+    case 'student':
+        echo '7-18';
+        break;
+
+    case 'univercity' :
+        echo '19-25';
+        break;
+
+    default:
+        echo 'phd';
+        break;
+
+endswitch;
