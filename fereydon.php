@@ -7,30 +7,40 @@ $c = 2;
 $x;
 $y;
 
+
+
 function br() 
 {
     echo '<br>';
 }
+
+
 
 function hr()
 {
     echo '<hr>';
 }
 
+
+
 $y = $a/$c-$b;
 echo $y;
 br();
 hr();
 
+
 echo 666;
 echo 'ali';
 br();
 
+
 echo $a;
 echo '<br>';
 
+
 $x = $a + $c;
 echo $x;
+
 
 br();
 hr();
@@ -50,8 +60,10 @@ hr();
 
 echo add_1 (8, 4, 2, 3) + add_2 (5, 3);
 
+
 br();
 hr();
+ 
 
 function add_1 ( $q, $w, $e, $r )
 {
@@ -88,30 +100,31 @@ echo str_replace('is' ,'are' , $text);
 
 
 
-echo'---------------------------------'
-$h=10;
+echo'---------------------------------';
 
-$hour = date('h');
 
-if ($hour <= 9) :
 
-    echo 'good morning';
+// $hour = date('h');
 
-elseif ($hour < 17) :
+// if ($hour <= 9) :
 
-    echo 'good afternoon';
+//     echo 'good morning';
 
-else :
+// elseif ($hour < 17) :
 
-    echo 'َgood night';
+//     echo 'good afternoon';
 
-endif;
+// else :
 
-echo $hour;
+//     echo 'َgood night';
 
-hr();
+// endif;
 
-$ali= 'phd';
+// echo $hour;
+
+ 
+
+$ali = 'phd';
 switch ($ali):
 
     case 'student':
@@ -127,3 +140,73 @@ switch ($ali):
         break;
 
 endswitch;
+
+$x ++;
+echo ++$x;
+
+$r=5;
+$p='5';
+var_dump($r==$p);
+var_dump($r===$p);
+
+
+
+echo '<table>';
+for ($i=1 ;$i<=10 ; $i++)
+{ echo'<tr>';
+
+for ($j=0 ; $j<=10 ; $j++)
+{
+    echo'<td>';
+    echo '<hr>';
+    $z=$i*$j;
+echo ($z);
+
+
+}
+}
+
+// echo'</table>';
+
+// echo '<table border="1">';
+// $group = array('A' => 120, 'B' => 125, 'C' => 83, 'D' => 154, 'E' => 123);
+// foreach($group as $key => $value) {
+//     echo '<th>' . $key . '</th>' . '<td>' . $value . '</td><tr></tr>';
+// }
+// echo '</table>';
+
+
+// for($i=0;$i<=10;$i++){
+// 	echo '<br/>';
+// 	for($j=0;$j<=10;$j++){
+// 		echo $i * $j,'    ';
+// 	}
+// }
+echo'<hr>';
+echo'<hr>';
+echo'<hr>';
+
+
+echo ("<table width=1000><tr>");
+for ($i=1; $i <= 10; $i++) { 
+	echo ("<td>");
+	for ($a=1; $a <= 10; $a++) { 
+		echo ("$i X $a = ");
+		echo $a * $i."<br>";
+	}
+	echo ("</td>");
+}
+
+
+
+echo ("</tr></table>");
+echo'<hr>';
+echo'<hr>';
+echo'<hr>';
+$array = array( 1, 2, 3, 4, 5);
+         
+foreach( $array as $value ) {
+   echo "Value is $value <br />";
+}
+
+?>
